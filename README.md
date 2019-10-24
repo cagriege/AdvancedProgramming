@@ -1,7 +1,6 @@
 # advancedProgramming
 # class works
-CW_1
-CW_2
-CW_3
+CW4 - CW#4 -- Promise & fetch() <a href="https://cagriege.github.io/AdvancedProgramming/CW4.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/CW4.html"><b>source</b></a>
+<br></td>
 # home works
 HW_1
