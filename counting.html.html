@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="https://maeyler.github.io/favicon.ico">
+    <title>Çağrı Ege</title>
+
+  <style> /* CSS comment */
+    body { max-width: 440px; }
+    #inp { width: 50px }
+	#quantity { width: 100px }
+    #out {
+        font-size: 24px;
+        background:#690000 ;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+  </style>
+</head>
+
+<body>   <!-- HTML comment: Modify all items marked xxx -->
+
+<h2 id=title>This text is not shown. Why?</h2>
+Artış Miktarı
+<input type=number id=quantity value=1>
+&emsp;
+<br>
+Girdi-------->
+<input type=number id=inp value=0 onChange="out.innerText=value;console.log('counter='+value);">
+
+<br>&emsp;
+<input type=button id=but value="Azalt" onClick="discrement()">
+&emsp;
+<input type=button id=but value="Arttır" onClick="increment()">
+&emsp;
+
+
+<p id=out>This text is not shown. Why?</p>
+
+<hr />
+<b>Sample code</b>
+<pre id=sample>This text is not shown. Why?</pre>
+
+<hr />
+<p>Ref: <a href="https://www.w3schools.com/js/" 
+   target="NewTab">JS Tutorial</a>
+</p>
+
+<script>
+"use strict";
+// JavaScript comment
+function increment() {
+	var q=Number(document.getElementById("quantity").value);
+    let c = Number(out.innerText)+q;
+    console.log("counter = "+c);
+    out.innerText = c;
+	inp.value=c;
+}
+function discrement() {
+	var q=Number(document.getElementById("quantity").value);
+    let c = Number(out.innerText)-q;
+    console.log("counter = "+c);
+    out.innerText = c;
+	inp.value=c;
+}
+    //global variable id is the HTML element with id 
+    //const title = document.getElementById("title");
+    title.innerText = document.title;
+    sample.innerText = increment.toString()+discrement.toString();
+    out.innerText = 0; increment();
+</script>
+
+</body>
+</html>
