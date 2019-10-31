@@ -1,6 +1,6 @@
 # advancedProgramming
 # class works
-CW2 - Celcius   <a href="https://cagriege.github.io/AdvancedProgramming/celcius.html.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/celcius.html.html"><b>source</b></a>
+CW2 - Celcius   <a href="https://cagriege.github.io/AdvancedProgramming/celcius.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/celcius.html"><b>source</b></a>
 <br></td>
 CW2 -Counting <a href="https://cagriege.github.io/AdvancedProgramming/counting.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/counting.html"><b>source</b></a>
 <br></td>
