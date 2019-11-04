@@ -1,0 +1,76 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="database.js"></script>
+    <title>Student Database </title>
+
+  <style>
+    .link {
+        color: blue;
+        cursor: pointer;
+        font-style: italic;
+    }
+    .course {
+        visibility: hidden;
+        font: 10px arial, sans-serif;
+        color: white;
+        background: blue;
+        cursor: text;
+        padding: 6px;
+        position: absolute;
+        height: 90px;
+        overflow-y: auto;
+    }
+    .link:hover .course { 
+        visibility: visible; 
+    }
+  </style>
+ <script>
+ </script>
+ </head>
+
+<body>
+
+<h2 id=title></h2>
+
+<button onClick='db.randomStudent()'>Rnd Student</button>
+<button onClick='db.randomCourse()'>Rnd Course</button>
+<button onClick='db.randomRoom()'>Rnd Room</button>
+<button onClick='out.innerText=""'>Clear</button>
+<hr />
+<p>Course name: 
+<input type=text id=crs value="ADP 103" onChange="db.studentListGivenCourse(value)">
+</p>
+
+<button onClick="db.studentListGivenCourse(crs.value)">StudentList</button>
+<hr />
+<p>Student id: 
+<input type=number id=stu value="211560141" onChange="db.showStudent(value)">
+</p>
+<button onClick='db.examScheduleGivenStu(stu.value)'>ExamSchedule</button>
+<hr />
+<p>Room : 
+<input type=text value="BZ015" id=room onChange="db.courseListGivenRoom(value)">
+</p>
+<button onClick="db.courseListGivenRoom(room.value)">CourseList</button>
+<button onClick="db.totalNumberOfCourseGivenRoom(room.value)">Total Number Courses</button>
+<hr />
+<p>Above/Below GPA 
+<input type=number id="gpa" value="2" step="0.10" onChange="db.aboveGpa(value)">
+</p>
+<button onClick='db.bestGpa()'>Best GPA</button>
+<hr />
+<p id=out onClick='db.doClick(event)'>Result:</p>
+
+<hr />
+
+<script>
+    title.innerText = document.title;
+    //sample.innerText = data+"\n"+addStudents;
+    //const keys = [], vals = [];
+    db = new Database();
+</script>
+
+</body>
+</html>
