@@ -16,5 +16,5 @@ CW6 -  File operat <a href="https://cagriege.github.io/AdvancedProgramming/CW6/C
 # home works
 HW1 - Possion Table <a href="https://cagriege.github.io/AdvancedProgramming/hw2/index.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw1.html"><b>source</b></a>
 <br></td>
-HW2 - Possion Table <a href="https://cagriege.github.io/AdvancedProgramming/hw2/index.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw1.html"><b>source</b></a>
+HW2 - Student Table <a href="https://cagriege.github.io/AdvancedProgramming/hw2/index.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw1.html"><b>source</b></a>
 <br></td>
