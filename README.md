@@ -6,7 +6,6 @@ CW2 -Counting <a href="https://cagriege.github.io/AdvancedProgramming/counting.h
 <br></td>
 CW3 -Objects and Arrays <a href="https://github.com/cagriege/AdvancedProgramming/blob/master/CW%233%20--%20Objects%20and%20Arrays/range.png"><b>view</b></a>
 <br></td>
-
 CW4 -  Promise & fetch() <a href="https://cagriege.github.io/AdvancedProgramming/CW4.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/CW4.html"><b>source</b></a>
 <br></td>
 CW5 -  Eloquent <a href="https://cagriege.github.io/AdvancedProgramming/CW5/work/EloquentJS.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/CW5/work/EloquentJS.html"><b>source</b></a>
@@ -15,5 +14,7 @@ CW6 -  File operat <a href="https://cagriege.github.io/AdvancedProgramming/CW6/C
 <br></td>
 
 # home works
-HW1 - Possion Table <a href="https://cagriege.github.io/AdvancedProgramming/hw1.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw1.html"><b>source</b></a>
+HW1 - Possion Table <a href="https://cagriege.github.io/AdvancedProgramming/hw2/index.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw1.html"><b>source</b></a>
+<br></td>
+HW2 - Possion Table <a href="https://cagriege.github.io/AdvancedProgramming/hw2/index.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw1.html"><b>source</b></a>
 <br></td>
