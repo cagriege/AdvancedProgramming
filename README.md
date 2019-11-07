@@ -11,7 +11,7 @@ CW4 -  Promise & fetch() <a href="https://cagriege.github.io/AdvancedProgramming
 <br></td>
 CW5 -  Eloquent <a href="https://cagriege.github.io/AdvancedProgramming/CW5/work/EloquentJS.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/CW5/work/EloquentJS.html"><b>source</b></a>
 <br></td>
-CW6 -  File operat <a href="https://cagriege.github.io/AdvancedProgramming/CW6/CW6.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/CW6/CW6.html"><b>source</b></a>
+CW6 -  File Operations <a href="https://cagriege.github.io/AdvancedProgramming/CW6/CW6.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/CW6/CW6.html"><b>source</b></a>
 <br></td>
 
 # Home Works
