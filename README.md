@@ -1,10 +1,10 @@
-# advancedProgramming
-# class works
+# AdvancedProgramming
+# Class Works
 CW2 - Celcius   <a href="https://cagriege.github.io/AdvancedProgramming/celcius.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/celcius.html"><b>source</b></a>
 <br></td>
 CW2 -Counting <a href="https://cagriege.github.io/AdvancedProgramming/counting.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/counting.html"><b>source</b></a>
 <br></td>
-CW3 -Objects and Arrays <a href="https://cagriege.github.io/AdvancedProgramming/CW3/range.png"><b>view</b></a>
+CW3 -Objects and Arrays <a href="https://cagriege.github.io/AdvancedProgramming/CW%233%20--%20Objects%20and%20Arrays/range.png"><b>view</b></a>-
 <a href="https://github.com/cagriege/AdvancedProgramming/blob/master/CW%233%20--%20Objects%20and%20Arrays/range.png"><b>Source</b></a>
 <br></td>
 CW4 -  Promise & fetch() <a href="https://cagriege.github.io/AdvancedProgramming/CW4.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/CW4.html"><b>source</b></a>
@@ -14,7 +14,7 @@ CW5 -  Eloquent <a href="https://cagriege.github.io/AdvancedProgramming/CW5/work
 CW6 -  File operat <a href="https://cagriege.github.io/AdvancedProgramming/CW6/CW6.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/CW6/CW6.html"><b>source</b></a>
 <br></td>
 
-# home works
+# Home Works
 HW1 - Possion Table <a href="https://cagriege.github.io/AdvancedProgramming/hw2/index.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw1.html"><b>source</b></a>
 <br></td>
 HW2 - Student Table <a href="https://cagriege.github.io/AdvancedProgramming/hw2/index.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw1.html"><b>source</b></a>
