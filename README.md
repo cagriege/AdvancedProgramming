@@ -13,6 +13,8 @@ CW5 -  Eloquent <a href="https://cagriege.github.io/AdvancedProgramming/CW5/work
 <br></td>
 CW6 -  File Operations <a href="https://cagriege.github.io/AdvancedProgramming/CW6/CW6.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/CW6/CW6.html"><b>source</b></a>
 <br></td>
+CW7 -  Timing <a href="https://cagriege.github.io/AdvancedProgramming/CW7/cw7.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/CW7/cw7.html"><b>source</b></a>
+<br></td>
 
 # Home Works
 HW1 - Poisson Table <a href="https://cagriege.github.io/AdvancedProgramming/hw2/index.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw1.html"><b>source</b></a>
