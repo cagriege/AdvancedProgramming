@@ -1,0 +1,123 @@
+<html>
+<head>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AdvancedProgramming</title>
+</head>
+<script>
+    if ('serviceWorker' in navigator) {
+     navigator.serviceWorker
+       .register('sw.js')
+       .then((reg) => { console.log('SW Registered', reg) })
+       .catch(console.log)
+   }
+</script>
+
+<style type="text/css">
+body {
+    font-family: "Lato", sans-serif;
+}
+.btn-group .button {
+    background-color: #4CAF50; /* Green */
+    border: 0px solid green;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.btn-group .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+.btn-group .button:hover {
+    background-color: #3e8e41;
+}
+.main {
+    margin-left: 140px; /*140px Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling width: auto !important;*/
+    padding: 0px 10px;
+}
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{font-family:Arial, sans-serif;font-size:100%;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:80%;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-baqh{text-align:center;vertical-align:top;border-width:2px;background-color: #2196F3;font-size:150%;}
+.tg .tg-0lax{text-align:left;vertical-align:top;border-width:0px;font-size:130%;}
+.tg .tg-1lax{text-align:center;vertical-align:center;border-width:0px;font-size:130%;}
+.tg .tg-2lax{text-align:left;vertical-align:center;border-width:0px;font-size:130%;}
+@media screen and (max-width: 600px) {
+  .tg {width: auto !important;} 
+  .tg col {width: auto !important;}
+  .tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px; margin-left: 0px;}
+  }
+</style>
+<script>
+</script>
+<body>
+<div class="tg-wrap"><div class="btn-group">
+  <table class="tg">
+
+       <th class="tg-baqh" colspan="3">CLASSWORKS
+   <tr>
+      <th class="tg-0lax">CW8 - DOM and PWA  </th>
+      <th class="tg-1lax"><input type=button value="public" class="button" title="" onclick="window.location.href='https://cagriege.github.io/AdvancedProgramming/cw8/CW8.html'"></th>
+      <th class="tg-1lax"><input type=button value="source" class="button" title="" onclick="window.location.href='https://github.com/cagriege/AdvancedProgramming/blob/master/cw8/CW8.html'"></th>
+    </tr>
+  <tr>
+    <th class="tg-0lax">CW7 -  Timing</th>
+    <th class="tg-1lax"><input type=button value="public" class="button" title="https://cagriege.github.io/AdvancedProgramming/CW7/cw7.html" onclick="window.open('https://cagriege.github.io/AdvancedProgramming/CW7/cw7.html')"></th>
+    <th class="tg-1lax"><input type=button value="source" class="button" title="https://github.com/cagriege/AdvancedProgramming/blob/master/CW7/cw7.html" onclick="window.open('https://github.com/cagriege/AdvancedProgramming/blob/master/CW7/cw7.html')"></th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">CW6 -  File Operations</td>
+    <td class="tg-1lax"><input type="button" value="public" class="button" title="https://cagriege.github.io/AdvancedProgramming/CW6/CW6.html" onclick="window.open('https://cagriege.github.io/AdvancedProgramming/CW6/CW6.html')"></td>
+    <td class="tg-1lax"><input type="button" value="source" class="button" title="https://github.com/cagriege/AdvancedProgramming/blob/master/CW6/CW6.html" onclick="window.open('https://github.com/cagriege/AdvancedProgramming/blob/master/CW6/CW6.html')"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">CW5 -  Eloquent</td>
+    <td class="tg-1lax"><input type="button" value="public" class="button" title="https://cagriege.github.io/AdvancedProgramming/CW5/work/EloquentJS.html" onclick="window.open('https://cagriege.github.io/AdvancedProgramming/CW5/work/EloquentJS.html')"></td>
+    <td class="tg-1lax"><input type="button" value="source" class="button" title="https://github.com/cagriege/AdvancedProgramming/blob/master/CW5/work/EloquentJS.html" onclick="window.open('hhttps://github.com/cagriege/AdvancedProgramming/blob/master/CW5/work/EloquentJS.html')"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">CW4 -  Promise & fetch()</td>
+    <td class="tg-1lax"><input type="button" value="public" class="button" title="https://cagriege.github.io/AdvancedProgramming/CW4.html" onclick="window.open('hhttps://cagriege.github.io/AdvancedProgramming/CW4.html')"></td>
+    <td class="tg-1lax"><input type="button" value="source" class="button" title="https://github.com/cagriege/AdvancedProgramming/blob/master/CW4.html" onclick="window.open('https://github.com/cagriege/AdvancedProgramming/blob/master/CW4.html')"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">CW3 - Objects and Arrays </td>
+    <td class="tg-1lax"><input type="button" value="public" class="button" title="https://cagriege.github.io/AdvancedProgramming/CW%233%20--%20Objects%20and%20Arrays/range.png" onclick="window.open('https://cagriege.github.io/AdvancedProgramming/CW%233%20--%20Objects%20and%20Arrays/range.png')"></td>
+    <td class="tg-1lax"><input type="button" value="source" class="button" title="https://github.com/cagriege/AdvancedProgramming/blob/master/CW%233%20--%20Objects%20and%20Arrays/range.png" onclick="window.open('https://github.com/cagriege/AdvancedProgramming/blob/master/CW%233%20--%20Objects%20and%20Arrays/range.png')"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">CW2 - Counting</td>
+    <td class="tg-1lax"><input type="button" value="public" class="button" title="https://cagriege.github.io/AdvancedProgramming/counting.html" onclick="window.open('https://cagriege.github.io/AdvancedProgramming/counting.html')"></td>
+    <td class="tg-1lax"><input type="button" value="source" class="button" title="https://github.com/cagriege/AdvancedProgramming/blob/master/counting.html" onclick="window.open('https://github.com/cagriege/AdvancedProgramming/blob/master/counting.html')"></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh" colspan="3">HOMEWORKS</td>
+  </tr>
+
+  <tr>
+    <td class="tg-0lax">HW_2</td>
+    <td class="tg-1lax"><input type="button" value="public" class="button" title="" onclick="window.open('')"></td>
+    <td class="tg-1lax"><input type="button" value="source" class="button" title="" onclick="window.open('')"></td>
+  </tr>
+  <tr>
+   <tr>
+    <td class="tg-0lax">HW_1</td>
+    <td class="tg-1lax"><input type="button" value="public" class="button" title="" onclick="window.open('')"></td>
+    <td class="tg-1lax"><input type="button" value="source" class="button" title="" onclick="window.open('')"></td>
+  </tr>
+  <tr>
+
+
+</tr>
+<tr>
+</tr>
+</table>
+</div></div></div>
+</body>
+</html>
