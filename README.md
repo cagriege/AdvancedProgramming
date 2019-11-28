@@ -17,7 +17,7 @@ CW7 -  Timing <a href="https://cagriege.github.io/AdvancedProgramming/CW7/cw7.ht
 <br></td>
 
 # Home Works
-HW1 - Poisson Table <a href="https://cagriege.github.io/AdvancedProgramming/hw2/index.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw1.html"><b>source</b></a>
+HW1 - Poisson Table <a href="https://cagriege.github.io/AdvancedProgramming/hw1.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw1.html"><b>source</b></a>
 <br></td>
 HW2 - Student Table <a href="https://cagriege.github.io/AdvancedProgramming/hw2/index.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw1.html"><b>source</b></a>
 <br></td>
