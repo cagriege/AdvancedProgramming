@@ -29,4 +29,4 @@ HW3 - Animate <a href="https://cagriege.github.io/AdvancedProgramming/Hw3/hw3.ht
 <br></td>
 # Project
 Proje - E-Fatura <a href="https://cagriege.github.io/AdvancedProgramming/proje/cagriproje.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/proje/cagriproje.html"><b>source</b></a>
-<br></td
+<br></td>
