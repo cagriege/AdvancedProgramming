@@ -1,5 +1,6 @@
-const CACHE ='JS'
-const FILES = ['/JS/', '/JS/sss/', '/JS/index.html', ...]
+
+const CACHE ='AdvancedProgramming'
+const FILES = ['/AdvancedProgramming/celcius.html', '/AdvancedProgramming/counting.html', '/AdvancedProgramming/CW%233%20--%20Objects%20and%20Arrays/range.png', '/AdvancedProgramming/CW4.html','/AdvancedProgramming/CW5/work/EloquentJS.html','/AdvancedProgramming/work/CW6/CW6.html', '/AdvancedProgramming/CW7/cw7.html','/AdvancedProgramming/cw8/CW8.html','/AdvancedProgramming/CW9.html','/AdvancedProgramming/hw1.html','/AdvancedProgramming/hw2/index.html','/AdvancedProgramming/hw3.html']
 function installCB(e) {
   e.waitUntil(
     caches.open(CACHE)
