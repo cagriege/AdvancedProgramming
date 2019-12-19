@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title> </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+button{
+  width: 150px;
+  margin-top: 10px;
+  padding: 6px 18px;
+  text-align: center;
+  border-radius: 4px;
+  position: relative;
+  margin-left: 350px
+}
+div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p{
+    text-align: center; 
+    font-size: 30px;
+    }
+.column {
+    float: left;
+    width: 33,3%;
+    padding: 0,6px;
+}
+.row{
+    content: "";
+    clear: both;
+    display: table;
+}
+  </style>
+</head>
+<body>
+<p><b>Zombie Move</b></p> 
+   <button onClick="jump();">Jump</button>
+   <button onClick="run();">Run </button>
+   <button onClick="walk();">Walk</button><br><br>
+   <button onClick="jumpleft();">Jump Left</button>
+   <button onClick="leftwalk();">Turn Left And Walk</button>
+<div style="width:25%;"id=div0><img src="zombie3.png" id ="zombie0" style="visibility:visible; margin-top:100px;"align="left" width="265" height="417"><br>
+</div> </p>
+<div style="width:25% " id=div1><img src="zombie32.png" id ="zombie1" style="visibility:hidden; margin-top:-350px;" align="left" width="265" height="417"><br>
+</div> </p>
+<script>
+function run(){
+zombie0.animate(zombieRun,7000);
+document.getElementById("zombie0").style.visibility = "visible";
+document.getElementById("zombie1").style.visibility = "hidden";
+document.getElementById("div0").disabled = false;
+document.getElementById("zombie0").disabled = false;
+}
+function walk(){
+zombie0.animate(zombieWalk,14000);
+document.getElementById("zombie0").style.visibility = "visible";
+document.getElementById("zombie1").style.visibility = "hidden";
+document.getElementById("div0").disabled = false;
+document.getElementById("zombie0").disabled = false;
+}
+function jump(){
+zombie0.animate(z1,z1Option);
+document.getElementById("zombie0").style.visibility = "visible";
+document.getElementById("zombie1").style.visibility = "hidden";
+document.getElementById("div0").disabled = false;
+document.getElementById("zombie0").disabled = false;
+}
+function jumpleft(){
+zombie1.animate(z1,z1Option);
+document.getElementById("div0").disabled = true;
+document.getElementById("zombie0").disabled = true;
+document.getElementById("zombie1").style.visibility = "visible";
+document.getElementById("zombie0").style.visibility = "hidden";
+}
+function leftwalk(){
+zombie1.animate(zombieLeft,10000);
+document.getElementById("div0").disabled = true;
+document.getElementById("zombie0").disabled = true;
+document.getElementById("zombie1").style.visibility = "visible";
+document.getElementById("zombie0").style.visibility = "hidden";
+}
+const 
+  z1 = [ { transform: 'translateY(20px)' }, { transform: 'translateY(-150px)' } ],
+  z1Option = { duration: 750,iterations:1 ,direction: "alternate",easing: 'ease-in-out'},
+  zombieRun = [{transform: 'translateX(0)'},{transform: 'translateX(1100px)'}],
+  zombieLeft = [{transform: 'translateX(700px)'},{transform: 'translateX(0px)'}],
+  zombieWalk = [{transform: 'translateX(0)'},{transform: 'translateX(1100px)'}];
+  title.innerText = document.title;
+</script>
+</body>
+</html>
