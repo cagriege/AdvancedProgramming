@@ -25,3 +25,5 @@ HW1 - Poisson Table <a href="https://cagriege.github.io/AdvancedProgramming/hw1.
 <br></td>
 HW2 - Student Table <a href="https://cagriege.github.io/AdvancedProgramming/hw2/index.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw2/index.html"><b>source</b></a>
 <br></td>
+HW3 - Animate <a href="https://cagriege.github.io/AdvancedProgramming/hw3/hw3.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw3/hw3.html"><b>source</b></a>
+<br></td>
