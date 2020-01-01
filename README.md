@@ -23,7 +23,7 @@ CW9 - External API  <a href="https://cagriege.github.io/AdvancedProgramming/CW9.
 # Home Works
 HW1 - Poisson Table <a href="https://cagriege.github.io/AdvancedProgramming/hw1.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw1.html"><b>source</b></a>
 <br></td>
-HW2 - Student Table <a href="https://cagriege.github.io/AdvancedProgramming/hw2/index.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw2/index.html"><b>source</b></a>
+HW2 - Student Database <a href="https://cagriege.github.io/AdvancedProgramming/hw2/index.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw2/index.html"><b>source</b></a>
 <br></td>
 HW3 - Animate <a href="https://cagriege.github.io/AdvancedProgramming/Hw3/hw3.html"><b>view</b></a>-<a href="https://github.com/cagriege/AdvancedProgramming/blob/master/Hw3/hw3.html"><b>source</b></a>
 <br></td>
