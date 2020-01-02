@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+ <title>
+            Fatura Yazdırma Ekranı | Çağrı Ege
+        </title>
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+<script>
+		class Fatura{
+			constructor(faturaId,tip,musteriAdi,sirketAdi,vergiNumara,vergiDaire,iletisim,urunler){
+			this.faturaId=faturaId
+			this.tip=tip
+			this.musteriAdi=musteriAdi
+			this.sirketAdi=sirketAdi
+            this.vergiNumara=vergiNumara
+			this.vergiDaire=vergiDaire
+			this.iletisim=iletisim
+			this.urunler=urunler
+           
+			
+			
+			}
+		}
+		class Musteri{
+			constructor(tip,musteriAdi,sirketAdi,vergiNumara,vergiDaire,iletisim){
+			this.tip=tip
+			this.musteriAdi=musteriAdi
+			this.sirketAdi=sirketAdi
+            this.vergiNumara=vergiNumara
+			this.vergiDaire=vergiDaire
+			this.iletisim=iletisim
+			}
+		}
+        class Urun {
+            constructor(urunId,urunAdi,urunFiyat,urunStok){
+                this.urunId=urunId
+                this.urunAdi=urunAdi
+                this.urunFiyat=urunFiyat
+                this.urunStok=urunStok
+        }
+        toString () {
+            return this.urunAdi
+        }
+        }
+        class Database{
+            constructor(){
+        this.urlS = "https://raw.githubusercontent.com/cagriege/AdvancedProgramming/master/proje/list.txt";
+        this.urunler = new Map();
+		this.musteriler	= new Map();
+		this.siparisler	= new Map();
+        this.readList();
+        
+        }
+        
+        readList() {
+            console.log("read urunList "+this.urlS);
+            fetch(this.urlS)
+            .then(r => r.text())
+            .then(r => this.addUrun(r))  
+    
+        }
+        addUrun(txt){
+            let msg = txt.length+" chars, ";
+            let a = txt.split("\n");
+            msg += a.length+" lines, ";
+            for (let s of a) {
+            let urun = this.parseList(s);
+            this.urunler.set(urun.urunId,urun);
+     
+    // console.table(student);
+        }
+   
+        //this.report(msg + this.keys1.length+" students");
+        
+        }
+        parseList(line){
+	let s = line.split("\t");
+    let courses = [];
+    //for (let i=0; i<s.length; i++) 
+    //courses.push(this.Courses.get(s[i]));
+    // courses.push(s[i]);
+    const urun = new Urun(s[0],s[1],s[2],s[3]);
+
+    return urun
+}
+
+	musteriEkle(){
+			var iletisim=[];
+            var adsoyad= document.getElementById("adiSoyadi").value;
+			var sirketunvan= document.getElementById("sirketUnvan").value;
+			var vergiDaire=document.getElementById("vergiDaire").value;
+			
+			iletisim.push(document.getElementById("adres").value);
+			iletisim.push(document.getElementById("telefon").value);
+			iletisim.push(document.getElementById("eposta").value);
+			var secenek = document.getElementById('musteriTip');
+			var musteriTip= secenek.options[secenek.selectedIndex].value;
+			var vergiNo=document.getElementById("vergiNo").value;
+			
+		if(db.musteriler.has(vergiNo)==true){
+			window.alert("Müşteri zaten kayıtlı");
+			
+		}else if(vergiNo=="" || musteriTip=="" || adsoyad=="" || sirketunvan=="" || vergiDaire=="" ){
+				window.alert("Tüm alanlar eksiksiz doldurulmalıdır.");
+		}
+		
+		else {
+		
+			const musteri = new  Musteri(musteriTip,adsoyad,sirketunvan,vergiNo,vergiDaire,iletisim);
+			
+			db.musteriler.set(vergiNo,musteri);
+			window.alert("Müşteri başarıyla eklendi.");
+    }
+	}
+    
+        }
+       db = new Database();
+
+</script>
+<!-- partial:index.partial.html -->
+<section>
+<input type="radio" id="profile" value="1" name="tractor" checked='checked' />    
+<input type="radio" id="settings" value="2" name="tractor" />      
+<input type="radio" id="posts" value="3" name="tractor" />
+<input type="radio" id="books" value="4" name="tractor" />
+  
+  <nav>   
+  <label for="profile" class='fa fa-user-plus'></label>
+  <label for="settings" class='fa fa-shopping-cart'></label>
+  <label for="posts" class='fa fa-print'></label>
+  <label for="books" class='fa fa-file-o'></label>
+  
+  </nav>
+
+  <article class='uno' id="1">
+		
+		  <form action="falan" >
+        
+        <h2>Müşteri Bilgileri</h2>
+		 
+           
+			<label for="musteriTip">Müşteri Tip</label><select form="tipList" id="musteriTip">
+             <option value="bireysel">Bireysel</option>
+			 <option value="kurumsal">Kurumsal</option>
+        </select><br>
+        <label for="adiSoyadi" >Adı Soyadı</label>
+        <input type="text" id="adiSoyadi" required><br>
+
+        <label for="sirketUnvan">Şirket Unvanı</label>
+        <input type="text" id="sirketUnvan" required><br>
+
+        <label for="vergiDaire">Vergi Dairesi</label>
+        <input type="text" id="vergiDaire" required><br>
+
+        <label for="vergiNo">Vergi & Tc No</label>
+        <input type="number" id="vergiNo" pattern=".{10,11}" required><br>
+      
+        
+        <label for="vergiNo">Adres</label><input type="text" id="adres" required><br>
+        <label for="vergiNo">Telefon</label><input type="number" id="telefon" required><br>
+        <label for="vergiNo">E- Posta</label><input type="text" id="eposta" required><br>
+		<input type="button" value="Müşteri Ekle" name="musteriEkle" onclick="db.musteriEkle();" id="musteriButon">
+        </form>
+   
+   
+  </article>
+  
+  <article class='dos'id="2">
+  
+  <h2>İrsaliye</h2>
+   <select name="urunListe" form="urunList" id="urunSecimForm">
+            
+        </select>	
+    <input type="button" value="Ürünleri Getir" onclick="appendToSelect()" id="irsaliye"><br>
+	<select name="musteriListe" form="musteriList" id="musteriSecimForm">
+            
+        </select>
+		<input type="button" value="Müşterileri Getir" onclick="appendToSelect2()" id="irsaliye"><br>
+         
+		<input id="adetUrun" type="number" max="10" min="1" value="1" disabled ><label for="adetUrun">Adet</label><br>
+		
+       <input type="submit" value="Ekle" name="urunEkle" id="irsaliye" onclick="ozetYazdir();"><br>
+	
+	
+		<h2>Özet</h2>
+   <p id="ozet"></p>
+    <input type="submit" value="Temizle"  onclick="temizle();" id="temizle"><br>
+	<input type="submit" value="Sipariş Onayla"  onclick="siparisOnayla();" id="siparisOnayla"><br>
+  </article>
+  
+  <article class='tres'  >
+    <select name="siparisListe" form="siparisList" id="siparisSecimForm">
+            
+        </select><br>
+		<input type="button" value="Siparişleri Getir" id="siparisGetir"onclick="appendToSelect3()" >
+		
+		 <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <div class="canvas-container">
+                          <span class="close">&times;</span>
+                          <canvas id="canvas" width="500" height="610"></canvas>
+                  </div>
+                </div>
+              </div>
+		<input type="button" value="Fatura Yazdır" id="faturaYazdir" onclick="printTicket()" >
+  </article>
+  
+  <article class='cuatro' >
+    <h2>Referanslar</h2>
+	<ul>
+	<li><a href="https://www.w3schools.com/">w3schools</a></li>
+	<li><a href="https://eloquentjavascript.net/">eloquentjavascript</a></li>
+	<li><a href="https://maeyler.github.io/JS/">maeyler.github.io/JS</a></li>
+	<li><a href="https://github.com/cagriege/AdvancedProgramming/blob/master/hw2/index.html">HW2 Student Database</a></li>
+	</ul>
+  </article>
+  
+</section>
+
+ <script>
+		
+			
+			function printTicket(){
+			var toplam=0;
+			var e3=document.getElementById("siparisSecimForm");
+			var value3=e3.options[e3.selectedIndex].value;
+			
+    var data = db.siparisler.get(value3);
+    var ctx = document.getElementById('canvas').getContext('2d');
+        var img = new Image();
+		
+		//siparisNo,musteriTip,musteriAdi,sirketAdi,vergiNumara,vergiDaire,iletisim,urunData
+        img.onload = function() {
+        ctx.drawImage(img, 0, 0);
+        ctx.font = "15px Tahoma";
+        ctx.fillText(data.faturaId,354, 119);
+        ctx.fillText(data.tip,326, 182);
+        ctx.fillText(data.musteriAdi,62, 231);
+        ctx.fillText(data.sirketAdi,24, 222);
+        ctx.fillText(data.vergiNumara,78, 252);
+        ctx.fillText(data.vergiDaire,47, 270);
+        ctx.fillText(data.iletisim[1],345, 220);
+		ctx.fillText(data.iletisim[0],65, 149);
+		ctx.fillText(data.iletisim[2],294, 256);
+        ctx.font = "13px Tahoma";
+		for(let i=0 ; i<data.urunler.length;i++){
+		toplam+=Number(data.urunler[i][3]);
+        ctx.fillText(data.urunler[i].join(" "),33,330+(i*18));
+		ctx.fillText(data.urunler[i][3],310,330+(i*18));
+		}
+		ctx.font = "18px Tahoma";
+		ctx.fillText(toplam,310, 541);
+		
+		
+        ctx.font = "15px Tahoma";
+        
+
+
+
+        //ctx.drawImage(imgLogo,451,266);
+  };
+        img.src = 'fatura.png';
+        
+        document.getElementById('myModal').style.display='block';
+        ctx.clearRect(0,0,820,350);
+}
+var dataURL = canvas.toDataURL('image/png',0.92);
+console.log(dataURL);
+var modal = document.getElementById('myModal');
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+		
+
+		function siparisOnayla(){
+			
+			var siparisNo= (db.siparisler.size+1000).toString();
+			
+			var e2=document.getElementById("musteriSecimForm");
+			var value2=e2.options[e2.selectedIndex].value;
+			
+			var musteriTip= db.musteriler.get(value2).tip;
+			var musteriAdi=db.musteriler.get(value2).musteriAdi;
+			var sirketAdi=db.musteriler.get(value2).sirketAdi;
+			var vergiNumara=db.musteriler.get(value2).vergiNumara;
+			var vergiDaire=db.musteriler.get(value2).vergiDaire;
+			var iletisim=db.musteriler.get(value2).iletisim;
+			
+			const fatura= new Fatura(siparisNo,musteriTip,musteriAdi,sirketAdi,vergiNumara,vergiDaire,iletisim,urunData)
+			db.siparisler.set(siparisNo,fatura);
+			temizle();
+		}
+		var htmlTxt2=" ";
+		var urunData=[];
+		function temizle(){
+			document.getElementById("ozet").innerHTML="";
+			document.getElementById("urunSecimForm").value="";
+			document.getElementById("musteriSecimForm").value="";
+			urunData=[];
+			htmlTxt2=" ";
+			
+		}
+		function appendToSelect3(){
+		
+		var htmlTxt3="";
+        
+        for(let x of db.siparisler){
+            
+
+                htmlTxt3+="<option value="+x[1].faturaId+"  style='color:green;'>Sipariş No "+x[1].faturaId+" </option>"
+
+            
+        }
+        document.getElementById("siparisSecimForm").innerHTML=htmlTxt3;
+		}
+		
+		
+		
+        function appendToSelect2(){
+		if(db.musteriler.size==0){
+			window.alert("Hiç müşteri eklenmedi.");
+		}else{
+        var htmlTxt="";
+        
+        for(let x of db.musteriler){
+            
+
+                htmlTxt+="<option value="+x[1].vergiNumara+"  style='color:green;'>Vergi No "+x[1].vergiNumara+" - "+x[1].tip+" -  :"+x[1].musteriAdi+" </option>"
+
+            
+        }
+        document.getElementById("musteriSecimForm").innerHTML=htmlTxt;
+		}
+    }   
+        
+        function appendToSelect(){
+        var htmlTxt=" ";
+        
+        for(let x of db.urunler){
+            if(x[1].urunStok>0){
+
+                htmlTxt+="<option adet="+x[1].urunStok+" value="+x[1].urunId+" style='color:green;'>"+x[1].urunId+" "+x[1].urunAdi+" Kalan Stok:"+x[1].urunStok+" Fiyat: "+x[1].urunFiyat+"</option>"
+
+            }else{
+                htmlTxt+="<option adet="+x[1].urunStok+" value="+x[1].urunId+" style='color:red;' disabled>"+x[1].urunId+" "+x[1].urunAdi+" Kalan Stok:"+x[1].urunStok+" Fiyat"+x[1].urunFiyat+"</option>"
+   
+            }
+        }
+        document.getElementById("urunSecimForm").innerHTML=htmlTxt;
+    }   
+         function ozetYazdir(){
+		 
+		 var urunler=[];
+		 var e=document.getElementById("urunSecimForm");
+		 var value=e.options[e.selectedIndex].value;
+		 
+		 var e2=document.getElementById("musteriSecimForm");
+		 var value2=e2.options[e2.selectedIndex].value;
+		 if(db.urunler.get(value).urunStok!=0||db.musteriler.get(value2)!=0){
+		 
+		
+		htmlTxt2+=db.urunler.get(value).urunId+" - "+db.urunler.get(value).urunAdi+" (1 Adet) "+db.urunler.get(value).urunFiyat+'<br>';
+		
+        urunler=[db.urunler.get(value).urunId,db.urunler.get(value).urunAdi,1,db.urunler.get(value).urunFiyat];
+		}else{
+			window.alert("Doğru seçim yapılmadı");
+		}
+		document.getElementById("ozet").innerHTML=htmlTxt2;
+		urunData.push(urunler);
+		
+    }   
+        
+        </script>
+
+</body>
+</html>
