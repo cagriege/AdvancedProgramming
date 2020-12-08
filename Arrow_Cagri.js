@@ -4,12 +4,12 @@ class Arrow_Cagri extends Animator  {
         this.author = 'Çağrı Ege'
         this.desc = 'Throw Arrow'
 		
-        let x0 = "translate(0px,0px)"
-        let x1 = "translate(30px,5px)"
+        let x0 = "transform:scale(.1)"
+	let x1 = "translate(30px,5px)"
         let x2 = "translate(80px,20px)"
         let x3 = "translate(120px,45px)"
         let x4 = "translate(160px,90px)"
-        let x5 = "translate(200px,125px)"
+        let x5 = "transform:scale(.07)"
         let x6 = "translate(240px,180px)"
         let x7 = "translate(280px,245px)"
         let x8 = "translate(320px,320px)"
